@@ -39,3 +39,6 @@ Here we go
     // 使用animate()会在滚动时加上动画的过度效果
     $("html,body").animate({scrollTop: $("#jys").offset().top}, 100);
     ```
+4. 受控表单
+---------------------------
+    this.forceUpdate();//强制渲染

@@ -42,3 +42,9 @@ Here we go
 4. 受控表单
 ---------------------------
     this.forceUpdate();//强制渲染
+5. 快速完全删除node_modules
+-----------------------------
+    1.安装npm包–rimraf
+        npm install rimraf -g
+    2.在cmd指令下，进入所需删除的node_modules文件夹的位置，再输入指令
+        rimraf node_modules

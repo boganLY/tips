@@ -48,3 +48,17 @@ Here we go
         npm install rimraf -g
     2.在cmd指令下，进入所需删除的node_modules文件夹的位置，再输入指令
         rimraf node_modules
+6. 获取`img`的宽高
+------------------------
+    ```javascript
+    let img_url = "http://ceshi-im-buckname.obs.cn-north-1.myhuaweicloud.com/1553046528093_0CS2VAnG40.jpg";
+    let img = new Image();
+    img.url = img_url;
+    if(img.complete) {
+        console.log('from:complete : width:'+img.width+',height:'+img.height);
+    } else {
+        img.onload = function() {
+            console.log('from:onload : width:'+img.width+',height:'+img.height)
+        }
+    }
+    ```
